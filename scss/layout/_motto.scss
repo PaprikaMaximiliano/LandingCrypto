@@ -1,0 +1,83 @@
+//@font-face {
+//    font-family: 'Onek Tubular';
+//    src: ;
+//}
+
+.motto{
+    position: relative;
+    color: white;
+    padding: 8.57vw 0 15.4vw 0;
+    //@media(max)
+    margin-bottom: 5vw;
+
+    &__text{
+        font-family: "Onek Tubular", sans-serif;
+        font-style: normal  ;
+        font-weight: 400;
+        @include adaptive-font(95);
+
+    }
+    &__decoration{
+        display: flex;
+
+    }
+
+    &__blur{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__gradient{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            padding-bottom: 20px;
+        &-yellow{
+            width: 7.6vw;
+            margin-left: 2.14vw;
+        }
+        &-blue{
+            width: 11.7vw;
+            margin-right: 2.14vw;
+        }
+
+    }
+
+    &__icon{
+        position: absolute;
+        top: 50%; right:-10%;
+        transform: translate(0,-50%);
+    }
+    &__image{
+        max-width: 740px;
+        width: 50vw;
+        height: auto;
+    }
+
+}
+
+.purple-gradient{
+    background-image: linear-gradient(270deg, #8501F0 8.81%, #E53DD1 134.2%);
+
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 400;
+    @include adaptive-font(225);
+
+    line-height:1.15;
+
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', serif;
+    font-style: normal;
+}
+
+.blur{
+    flex: 1 0 auto;
+    height: 38.42vw;
+    width: 38.42vw;
+    position: absolute;
+    background: #661FBF;
+    filter: blur(350px);
+    z-index: -1;
+}

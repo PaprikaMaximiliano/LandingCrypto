@@ -1,0 +1,44 @@
+.spray{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 51vw;
+
+    &__icon{
+        position: absolute;
+        top: 0;
+        left: -8%;
+    }
+
+
+    &__blur{
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+    &__image{
+        max-width: 50vw;
+        height: auto;
+
+    }
+
+    &__title{
+        position: absolute;
+        top: calc(3vh + 15vw);
+        left: 35vw;
+    }
+
+    &__text{
+        font-family: "Onek Tubular", sans-serif;
+        font-style: normal  ;
+        font-weight: 400;
+        @include adaptive-font(95);
+
+    }
+
+    &__gradient{
+        @include adaptive-font(270);
+        line-height: 1.15;
+    }
+}
+
